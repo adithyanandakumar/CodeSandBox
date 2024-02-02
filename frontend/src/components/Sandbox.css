@@ -1,32 +1,42 @@
 .sandbox-container {
-    display:block;
-    height: 300%;
-  }
-  
-  .sandbox-editor {
-    flex: 12;
-    height: 300%;
-  }
-  
-  .sandbox-output {
-    flex: 1;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .sandbox-output button {
-    margin-bottom: 10px;
-  }
-  
-  .output-frame {
-    width: 100%;
-    height: 200px; /* Set height as needed */
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-  }
-  
-  .output-text {
-    white-space: pre-wrap;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Adjust the height as needed */
+}
+
+.sandbox-editor {
+  flex: 1; /* Take up remaining vertical space */
+}
+
+.sandbox-output {
+  flex: 1; /* Take up remaining vertical space */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sandbox-output button {
+  background-color: #007bff; /* Blue color for the button background */
+  color: #fff; /* White color for the button text */
+  border: none; /* Remove button border */
+  padding: 10px 20px;
+  margin-bottom: 20px; /* Add padding to the button */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.sandbox-output button:hover {
+  background-color: #0056b3; /* Darker blue color on button hover */
+}
+
+
+.output-frame {
+  width: 100%;
+  height: 200px; /* Set height as needed */
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.output-text {
+  white-space: pre-wrap;
+}
