@@ -1,0 +1,48 @@
+.home-container {
+  padding: 20px;
+}
+
+.home-message {
+  font-size: 18px;
+}
+
+/* Style for code snippets */
+.code-snippet {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.code-snippet .code-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.code-snippet pre {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.code-snippet .code {
+  font-family: 'Courier New', Courier, monospace;
+  color: #333;
+}
+
+/* Style for output snippets */
+.output-snippet {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.output-snippet .output-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.output-snippet pre {
+  margin: 0;
+  white-space: pre-wrap;
+}
