@@ -7,12 +7,11 @@ const Sandbox = ({ userId }) => {
   const [code, setCode] = useState('');
   const [isCodeRunning, setIsCodeRunning] = useState(false);
 
-  // Function to handle acknowledging the end of code execution
+  //acknowledge end
   const handleAcknowledgeEnd = async () => {
-    setIsCodeRunning(true); // Set code running state to true
+    setIsCodeRunning(true); 
   };
 
-  // Function to save the sandbox
   const saveSandbox = async (output) => {
     try {
       // Remove the code part from the output
@@ -21,16 +20,16 @@ const Sandbox = ({ userId }) => {
       const response = await axios.post('http://localhost:5000/api/sandbox', {
         userId: userId,
         code: code,
-        output: cleanedOutput || '' // Set output to empty string if not provided
+        output: cleanedOutput || '' 
       });
-      console.log(response.data); // Log response for debugging
+      console.log(response.data); // debug
       alert('Sandbox saved successfully!');
     } catch (error) {
       console.error('Error saving sandbox:', error);
     }
   };
 
-  // useEffect hook to save the sandbox when the code running state changes
+  
   useEffect(() => {
     if (isCodeRunning) {
       // Get the iframe element

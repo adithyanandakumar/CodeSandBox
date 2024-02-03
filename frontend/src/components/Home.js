@@ -23,7 +23,7 @@ const Home = ({ isAuthenticated, userId }) => {
 
   return (
     <div className="home-container">
-      <h2>Home</h2>
+      <h2>CodeSandBox - from Adithya</h2>
       <p className="home-message">
         {isAuthenticated ? 'You are logged in!' : 'Please login or signup to continue.'}
       </p>

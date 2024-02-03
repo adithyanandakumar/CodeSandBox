@@ -12,13 +12,10 @@ const Login = ({ onLoginSuccess }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/login', { username, password });
-      // Assuming the response contains the userId
+      const response = await axios.post('http://localhost:5000/login', { username, password })
       const { userId } = response.data;
       console.log(response.data)
-      // Call the onLoginSuccess function with userId
       onLoginSuccess(userId);
-      // Navigate to Home after successful login
       navigate('/');
     } catch (error) {
       setError(error.response.data.message);

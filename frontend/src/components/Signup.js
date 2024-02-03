@@ -13,9 +13,7 @@ const Signup = ({ onSignupSuccess }) => {
     e.preventDefault();
     try {
       const response = await axios.post('http://localhost:5000/signup', { username, password });
-      // Handle successful signup
       onSignupSuccess();
-      // Navigate to Home after successful signup
       navigate('/');
     } catch (error) {
       setError(error.response.data.message);

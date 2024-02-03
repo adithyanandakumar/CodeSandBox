@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+/* Navigation Bar */
+/* styles.css */
+.navbar {
+  background-color: #333; /* Background color for the navbar */
+  padding: 10px; /* Padding for the navbar */
+}
+
+.nav-links {
+  list-style-type: none; /* Remove bullet points from the list */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-links li {
+  display: inline; /* Display list items horizontally */
+  margin-right: 20px; /* Add spacing between list items */
+}
+
+.nav-links li:last-child {
+  margin-right: 0; /* Remove margin from the last list item */
+}
+
+.nav-links li a {
+  color: #fff; /* Text color for the links */
+  text-decoration: none; /* Remove underline from the links */
+}
+
+.nav-links li a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+.nav-links li button {
+  background-color: #f44336; /* Red color for the logout button background */
+  color: #fff; /* White color for the logout button text */
+  border: none; /* Remove button border */
+  padding: 8px 16px; /* Add padding to the button */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.nav-links li button:hover {
+  background-color: #d32f2f; /* Darker red color on button hover */
+}
