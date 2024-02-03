@@ -2,7 +2,7 @@
 ![editor](https://github.com/adithyanandakumar/CodeSandBox/assets/80444800/efca5001-35e9-453b-b8ec-f5fc557cfa04)
 
 ## Home
-![saved sandbox](https://github.com/adithyanandakumar/CodeSandBox/assets/80444800/daf42f9e-856c-4141-b09e-35faf4230b84)
+![home](https://github.com/adithyanandakumar/CodeSandBox/assets/80444800/bd6a88b4-decf-4528-b1d0-963f249b3e38)
 
 ## Signup
 ![signup](https://github.com/adithyanandakumar/CodeSandBox/assets/80444800/6d4374d4-386f-454f-a4c3-30fe85f3fafb)
